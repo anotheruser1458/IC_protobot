@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: red;
+}
+
+.statsContainer {
+    display: flex;
+    background: green;   
+}
+
+h1 {
+    color: blue;
+}
