@@ -1,0 +1,8 @@
+prefix=/home/maxwell/Desktop/IC_protobot/catkin_ws/install
+
+Name: protobot_localization
+Description: Description of protobot_localization
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

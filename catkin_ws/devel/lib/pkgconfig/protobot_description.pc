@@ -1,0 +1,8 @@
+prefix=/home/maxwell/Desktop/IC_protobot/catkin_ws/devel
+
+Name: protobot_description
+Description: Description of protobot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

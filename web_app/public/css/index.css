@@ -5,7 +5,7 @@
     background: red;
 }
 
-.statsContainer {
+body {
     display: flex;
     background: green;   
 }

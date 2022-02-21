@@ -4,7 +4,14 @@ var keyboardTopic = new ROSLIB.Topic({
 })
 
 keyboardTopic.subscribe((m) => {
-    console.log(m.linear.x)
+    x = String(m.linear.x.toFixed(2))
+    lx= String(m.angular.x.toFixed(2))
+    document.getElementById("linearX").innerHTML = "LinearX: " + x
+    document.getElementById("linearY").innerHTML = "LinearY: " + m.linear.y
+    document.getElementById("linearZ").innerHTML = "LinearZ: " + m.linear.z
+    document.getElementById("angularX").innerHTML = "AngularX: " + lx
+    document.getElementById("angularY").innerHTML = "AngularY: " + m.linear.y
+    document.getElementById("angularZ").innerHTML = "AngularZ: " + m.linear.z
 })
 
 var message;

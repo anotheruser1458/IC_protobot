@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" src="/css/index.css"/>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.statusContainer {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    display: flex;
+}
+h3 {
+    font-size: 2rem;
+}
+img {margin-left: 150px;}
+    </style>
 </head>
 <body>
     <h1>GUI Prototype</h1>
@@ -14,7 +33,6 @@
         <button type="submit">Send to ROS</button>
     </form>
     
-    <h2 id="data"></h2>
     <!-- <iframe src="http://localhost:8080/stream_viewer?topic=/image_raw" title="Camera 1"></iframe> -->
     <div class="statsContainer">
         <h3>Odometry:</h3>
@@ -32,7 +50,7 @@
         <p id="twistAngularX"></p>
         <p id="twistAngularY"></p>
         <p id="twistAngularZ"></p>
-    
+        <br><br>
         <h3>GPS:</h3>
         <h4>Status:</h4>
         <p id="status"></p>
@@ -51,8 +69,16 @@
         <p id="time"></p>
         <p id="gdop"></p>
         <p id="pdop"></p>
+        <br><br>
+        <h3>Velocity</h3>
+        <p id="linearX"></p>
+        <p id="linearY"></p>
+        <p id="linearZ"></p>
+        <p id="angularX"></p>
+        <p id="angularY"></p>
+        <p id="angularZ"></p>
     </div>
-    
+    <img src="http://localhost:8080/stream?topic=/image_raw">    
     <script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
     <script src="/js/gamepad.js"></script>
     <script src="/js/testSubscribe.js"></script>

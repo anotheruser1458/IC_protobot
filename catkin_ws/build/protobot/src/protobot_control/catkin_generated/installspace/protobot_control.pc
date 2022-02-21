@@ -1,0 +1,8 @@
+prefix=/home/maxwell/Desktop/IC_protobot/catkin_ws/install
+
+Name: protobot_control
+Description: Description of protobot_control
+Version: 0.1.3
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
