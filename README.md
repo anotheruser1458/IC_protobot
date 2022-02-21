@@ -52,5 +52,6 @@ npm run dev
 http://localhost:8000 -->
 
 ## Motor Encoders
+<script src="https://gist.github.com/anotheruser1458/6c4cc14e8b29b6d2e9777a6b1872d5c9.js"></script>
 
 ## Arm Simulation
