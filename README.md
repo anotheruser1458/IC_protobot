@@ -41,11 +41,12 @@ The robot uses ten motors, six for forward and backward acceleration and four fo
 ## Installation
 
 ### Dependencies
-#### sudo apt update
-#### sudo apt upgrade
-#### sudo apt-get install ros-noetic-rosbridge-suite
-#### sudo apt-get install ros-noetic-rosbridge-server
-#### sudo apt install nodejs npm
+
+sudo apt update
+sudo apt upgrade
+sudo apt-get install ros-noetic-rosbridge-suite
+sudo apt-get install ros-noetic-rosbridge-server
+sudo apt install nodejs npm
 
 ### Getting Started:
 
