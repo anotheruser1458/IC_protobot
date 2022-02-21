@@ -17,10 +17,26 @@ https://user-images.githubusercontent.com/74911365/154920396-d8579ff4-1784-4360-
 
 ## Gazebo Simulation
 
-## Web App Graphical User Interface
+## Web App Graphical User Interface (GUI)
+The GUI is made
 
-<!-- 
+
+
+https://user-images.githubusercontent.com/74911365/154946249-04c9510b-1193-423e-aa36-a8eb3eec0615.mp4
+
+
+
 https://user-images.githubusercontent.com/74911365/140019513-80895195-2fa0-49e1-8030-edcdf03711ba.mp4
+
+
+## Motor Encoders
+The robot uses ten motors, six for forward and backward acceleration and four for steering. We are using the (https://www.pololu.com/product/3284) Roboclaw motor encoders which communicate over serial ports. A 'roboclaw' object was created using C++ which acts as the bridge between the linux serial ports and the actual encoders (source(link)). This object is used by the ROS node (source(link)) to properly send and recieve data and control when the wheels spin.
+
+(video of ros sending and recieving data and turning the wheels)
+
+## Arm Simulation
+
+## Installation
 
 ## Dependencies
 ### sudo apt update
@@ -29,8 +45,7 @@ https://user-images.githubusercontent.com/74911365/140019513-80895195-2fa0-49e1-
 ### sudo apt-get install ros-noetic-rosbridge-server
 ### sudo apt install nodejs npm
 
-
-## To get it to work:
+## Getting Started:
 
 ### Terminal 1 (runs ros core through the rosbridge (web socket package) launch file):
 
@@ -50,10 +65,3 @@ npm run dev
 
 ### Web Browser:
 http://localhost:8000 -->
-
-## Motor Encoders
-The robot uses ten motors, six for forward and backward acceleration and four for steering. We are using the (https://www.pololu.com/product/3284) Roboclaw motor encoders which communicate over serial ports. A 'roboclaw' object was created using C++ which acts as the bridge between the linux serial ports and the actual encoders (source(link)). This object is used by the ROS node (source(link)) to properly send and recieve data and control when the wheels spin.
-
-(video of ros sending and recieving data and turning the wheels)
-
-## Arm Simulation
