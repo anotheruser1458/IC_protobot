@@ -19,7 +19,7 @@ https://user-images.githubusercontent.com/74911365/154920396-d8579ff4-1784-4360-
 
 ## Web App Graphical User Interface (GUI)
 
-The ROS network connects to a web browser via a web socket, allowing us to send/recieve/display data wirelessly using the http protocol. The web server is made using Node.js/Express and the data is displayed using html/css/javascript. The video below shows a demo of the earliest prototype where a video feed and three topics are subscribed who's data is displayed on the homepage. Javascript allows raw keyboard input (in this case the up arrow and down arrow) to send commands to the ros network. 
+The ROS network connects can connect to web browsers via a web socket, allowing data to be sent, recieved, and displayed directly on the browser. Commands are transferred wirelessly using the http protocol, which can support large amounts of bandwidth. The web server was made using Node.js/Express and the data is displayed using html/css/javascript. The video below shows a demo of the earliest prototype where a video feed and three topics are subscribed who's data is displayed on the homepage. Javascript allows raw keyboard input (in this case the up arrow and down arrow) to send commands to the ros network. 
 
 ### The keyboard arrows are pressed and the linearX velocity rises and falls accordingly.
 
