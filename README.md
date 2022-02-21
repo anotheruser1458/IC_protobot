@@ -52,5 +52,8 @@ npm run dev
 http://localhost:8000 -->
 
 ## Motor Encoders
+The robot uses ten motors, six for forward and backward acceleration and four for steering. We are using the (https://www.pololu.com/product/3284) Roboclaw motor encoders which communicate over serial ports. A 'roboclaw' object was created using C++ which acts as the bridge between the linux serial ports and the actual encoders (source(link)). This object is used by the ROS node (source(link)) to properly send and recieve data and control when the wheels spin.
+
+(video of ros sending and recieving data and turning the wheels)
 
 ## Arm Simulation
