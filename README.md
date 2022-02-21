@@ -1,6 +1,12 @@
-# guiPrototype
+# IC_protobot
 
-## It can do this
+## Overview
+
+This is a clone of the shared project repository made by the members of the University of Hawaii Robotic Space Exploration Team(link). Our team's goal is to creat a six wheeled robot that can drive, operate a manipulator arm, detect life, and autonomously navigate which we will officially enter into the University Rover Challenge(link), June 2022. This repository contains the software module prototypes which we worked diligently on in order to prove the architectural concepts laid out in our Critical Design Review(link).
+
+Contributors: Maxwell Pauly, Bret Witt, Ashten Akemoto, Jacob Sequeira, Jeraldine Milla, Stephanie Alemore, and Zolbo Tomita
+
+## Web App Graphical User Interface
 
 https://user-images.githubusercontent.com/74911365/140019513-80895195-2fa0-49e1-8030-edcdf03711ba.mp4
 
