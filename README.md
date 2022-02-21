@@ -18,13 +18,15 @@ https://user-images.githubusercontent.com/74911365/154920396-d8579ff4-1784-4360-
 ## Gazebo Simulation
 
 ## Web App Graphical User Interface (GUI)
-The GUI is made
 
+The ROS network connects to a web browser via a web socket, allowing us to send/recieve/display data wirelessly using the http protocol. The web server is made using Node.js/Express and the data is displayed using html/css/javascript. The video below shows a demo of the earliest prototype where a video feed and three topics are subscribed who's data is displayed on the homepage. Javascript allows raw keyboard input (in this case the up arrow and down arrow) to send commands to the ros network. 
 
+### In the video the keyboard arrows are pressed and the linearX velocity rises and falls accordingly.
 
 https://user-images.githubusercontent.com/74911365/154946249-04c9510b-1193-423e-aa36-a8eb3eec0615.mp4
 
 
+### Text input in an html form is sent to the ROS network and broadcasted by a node.
 
 https://user-images.githubusercontent.com/74911365/140019513-80895195-2fa0-49e1-8030-edcdf03711ba.mp4
 
