@@ -564,6 +564,15 @@ clear_costmap_recovery_SOURCE_DIR:STATIC=/home/maxwell/Desktop/IC_protobot/catki
 //The directory containing a CMake configuration file for cmake_modules.
 cmake_modules_DIR:PATH=/opt/ros/noetic/share/cmake_modules/cmake
 
+//The directory containing a CMake configuration file for controller_interface.
+controller_interface_DIR:PATH=/opt/ros/noetic/share/controller_interface/cmake
+
+//The directory containing a CMake configuration file for controller_manager.
+controller_manager_DIR:PATH=/opt/ros/noetic/share/controller_manager/cmake
+
+//The directory containing a CMake configuration file for controller_manager_msgs.
+controller_manager_msgs_DIR:PATH=/opt/ros/noetic/share/controller_manager_msgs/cmake
+
 //Value Computed by CMake
 costmap_2d_BINARY_DIR:STATIC=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/navigation/costmap_2d
 
@@ -599,6 +608,9 @@ dwa_local_planner_SOURCE_DIR:STATIC=/home/maxwell/Desktop/IC_protobot/catkin_ws/
 
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/noetic/share/dynamic_reconfigure/cmake
+
+//The directory containing a CMake configuration file for effort_controllers.
+effort_controllers_DIR:PATH=effort_controllers_DIR-NOTFOUND
 
 //Value Computed by CMake
 fake_localization_BINARY_DIR:STATIC=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/navigation/fake_localization
@@ -703,6 +715,9 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
+//The directory containing a CMake configuration file for hardware_interface.
+hardware_interface_DIR:PATH=/opt/ros/noetic/share/hardware_interface/cmake
+
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/noetic/share/image_transport/cmake
 
@@ -713,7 +728,7 @@ laser_geometry_DIR:PATH=/opt/ros/noetic/share/laser_geometry/cmake
 layers_LIB_DEPENDS:STATIC=general;costmap_2d;
 
 //Path to a library.
-lib:FILEPATH=/usr/lib/x86_64-linux-gnu/libdl.so
+lib:FILEPATH=/opt/ros/noetic/lib/librospack.so
 
 //Value Computed by CMake
 listener_package_BINARY_DIR:STATIC=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/listener_package
@@ -836,6 +851,18 @@ pkgcfg_lib_swscale_swscale:FILEPATH=/usr/lib/x86_64-linux-gnu/libswscale.so
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
+
+//Value Computed by CMake
+protobot_bringup_BINARY_DIR:STATIC=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/protobot/src/protobot_bringup
+
+//Value Computed by CMake
+protobot_bringup_SOURCE_DIR:STATIC=/home/maxwell/Desktop/IC_protobot/catkin_ws/src/protobot/src/protobot_bringup
+
+//Value Computed by CMake
+protobot_control_BINARY_DIR:STATIC=/home/maxwell/Desktop/IC_protobot/catkin_ws/build/protobot/src/protobot_control
+
+//Value Computed by CMake
+protobot_control_SOURCE_DIR:STATIC=/home/maxwell/Desktop/IC_protobot/catkin_ws/src/protobot/src/protobot_control
 
 //The directory containing a CMake configuration file for rosbag.
 rosbag_DIR:PATH=/opt/ros/noetic/share/rosbag/cmake
@@ -1135,7 +1162,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=28
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
