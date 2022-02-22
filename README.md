@@ -40,7 +40,11 @@ https://user-images.githubusercontent.com/74911365/140019513-80895195-2fa0-49e1-
 
 
 ## Motor Encoders
-The robot uses ten motors, six for forward and backward acceleration and four for steering. We are using the (https://www.pololu.com/product/3284) Roboclaw motor encoders which communicate over serial ports. A 'roboclaw' object was created using C++ which acts as the bridge between the linux serial ports and the actual encoders (source(link)). This object is used by the ROS node (source(link)) to properly send and recieve data and control when the wheels spin.
+
+The robot uses ten motors: six for forward and backward acceleration and four for steering the wheels left and right. We are using [Roboclaw](https://www.pololu.com/product/3284) motor encoders which communicate over serial ports. 
+
+
+A 'roboclaw' object was created using C++ which acts as the bridge between the linux serial ports and the actual encoders ([source](https://github.com/anotheruser1458/IC_protobot/blob/main/catkin_ws/src/protobot/src/protobot_control/src/roboclaw.cpp). This object is used by the ROS node ([source](https://github.com/anotheruser1458/IC_protobot/blob/main/catkin_ws/src/protobot/src/protobot_control/src/protobot.cpp)) to properly send and recieve data and control when the wheels spin.
 
 (video of ros sending and recieving data and turning the wheels)
 
