@@ -28,7 +28,6 @@ A basic gazebo simulation with a turtlebot and obstacles. The turtlebot is using
 
 
 ## Web App Graphical User Interface (GUI)
-<br>
 A GUI is needed to contorl the robot and subsequently compete in the URC competition. The stack begins with a simple web app which interfaces with the ROS network via a web socket. Commands are transferred wirelessly using 802.11 WiFi and the HTTP protocol. The web server was made using Node.js and Express (<a href="https://github.com/anotheruser1458/IC_protobot/blob/main/web_app/server.js">source</a>). The data is displayed to the operator using html/css/javascript (<a href="https://github.com/anotheruser1458/IC_protobot/tree/main/web_app/public/js">source</a>). The video below shows a demo of the latest prototype where a video feed and three topics are displayed on the homepage. 
 <br>
 The latest GUI prototype can display video output, and topic data. The up and down arrows are pressed on the keyboard and which sends velocity commands to ROS, which can be seen at the bottom of the display.
