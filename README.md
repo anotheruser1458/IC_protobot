@@ -29,7 +29,7 @@ Gazebo is a suite of simulation software that communicates quite nicely with ROS
 
 ## Web App Graphical User Interface (GUI)
 <br>
-A GUI is needed to contorl the robot and subsequently compete in the URC competition. The stack begins with a simple web app which interfaces with the ROS network via a web socket. Commands are transferred wirelessly (with generous bandwidth limitations) using 802.11 WiFi and the HTTP protocol. The web server was made using Node.js and Express. The data is displayed to the operator using html/css/javascript [source](https://github.com/anotheruser1458/IC_protobot/tree/main/web_app/public/js). The video below shows a demo of the latest prototype where a video feed and three topics are displayed on the homepage. 
+A GUI is needed to contorl [source](https://github.com/anotheruser1458/IC_protobot/tree/main/web_app/public/js) the robot and subsequently compete in the URC competition. The stack begins with a simple web app which interfaces with the ROS network via a web socket. Commands are transferred wirelessly (with generous bandwidth limitations) using 802.11 WiFi and the HTTP protocol. The web server was made using Node.js and Express. The data is displayed to the operator using html/css/javascript. The video below shows a demo of the latest prototype where a video feed and three topics are displayed on the homepage. 
 <br>
 The latest GUI prototype can display video output, and topic data. The up and down arrows are pressed on the keyboard and which sends velocity commands to ROS, which can be seen at the bottom of the display.
 <br>
