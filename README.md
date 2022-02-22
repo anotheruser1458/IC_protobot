@@ -28,10 +28,14 @@ A GUI is needed to contorl the robot and subsequently compete in the URC competi
 
 The latest GUI prototype can display video output, and topic data. The up and down arrows are pressed on the keyboard and which sends velocity commands to ROS, which can be seen at the bottom of the display.
 <br>
+
+
 https://user-images.githubusercontent.com/74911365/154946249-04c9510b-1193-423e-aa36-a8eb3eec0615.mp4
 
 
 An earlier prototype, text input in an html form is sent to the ROS network and broadcasted by a node.
+
+
 https://user-images.githubusercontent.com/74911365/140019513-80895195-2fa0-49e1-8030-edcdf03711ba.mp4
 
 
