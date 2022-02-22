@@ -10,7 +10,6 @@ Picture of the robot currently used for prototyping:
 <br>
 ![image](https://user-images.githubusercontent.com/74911365/155123497-79ac5871-d912-4ee8-9e1f-668debe898f1.png)
 
-
 ## Robot Operating System (ROS)
 
 ROS is an open source robotics middleware suite and is the premier framework for robotic rapid prototyping. The [ROS wiki](https://www.ros.org/) is an outstanding resource to learn more so I won't go into detail here. The project uses ROS for the majority of the robot's communication between components and functionality. Each software developer on the project completed the [ROS Tutorials](http://wiki.ros.org/ROS/Tutorials) and below is a demonstration of ROS nodes talking to one another and executing commands.
@@ -23,13 +22,14 @@ https://user-images.githubusercontent.com/74911365/154920396-d8579ff4-1784-4360-
 ## Gazebo Simulation
 Gazebo is a suite of simulation software that communicates quite nicely with ROS. The team religiously uses gazebo to simulate all prototyped software and hardware dimensions before any fabrication takes place.
 
+A basic gazebo simulation with a turtlebot and obstacles. The turtlebot is using it's simulated laser scanner and a simple obstacle avoidance algorithm to wander around obstacles.
 ![gazeboBasics](https://user-images.githubusercontent.com/74911365/155137434-49c81e47-bed8-485f-a7df-9dd46aa74114.png)
 
 
 
 ## Web App Graphical User Interface (GUI)
 <br>
-A GUI is needed to contorl the robot and subsequently compete in the URC competition. The stack begins with a simple web app which interfaces with the ROS network via a web socket. Commands are transferred wirelessly using 802.11 WiFi and the HTTP protocol. The web server was made using Node.js and Express (<a href="https://github.com/anotheruser1458/IC_protobot/blob/main/web_app/server.js">source</a>. The data is displayed to the operator using html/css/javascript (<a href="https://github.com/anotheruser1458/IC_protobot/tree/main/web_app/public/js">source</a>). The video below shows a demo of the latest prototype where a video feed and three topics are displayed on the homepage. 
+A GUI is needed to contorl the robot and subsequently compete in the URC competition. The stack begins with a simple web app which interfaces with the ROS network via a web socket. Commands are transferred wirelessly using 802.11 WiFi and the HTTP protocol. The web server was made using Node.js and Express (<a href="https://github.com/anotheruser1458/IC_protobot/blob/main/web_app/server.js">source</a>). The data is displayed to the operator using html/css/javascript (<a href="https://github.com/anotheruser1458/IC_protobot/tree/main/web_app/public/js">source</a>). The video below shows a demo of the latest prototype where a video feed and three topics are displayed on the homepage. 
 <br>
 The latest GUI prototype can display video output, and topic data. The up and down arrows are pressed on the keyboard and which sends velocity commands to ROS, which can be seen at the bottom of the display.
 <br>
