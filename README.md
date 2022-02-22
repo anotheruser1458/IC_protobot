@@ -66,7 +66,7 @@ A 'roboclaw' object was created using C++ which acts as the bridge between the l
 ### Getting Started:
 
 #### Terminal 1 (runs ros core through the rosbridge (web socket package) launch file):
-
+[source](https://github.com/anotheruser1458/IC_protobot/tree/main/web_app/public/js)
 cd catkin_ws
 source devel/setup.bash
 roslaunch rosbridge_server rosbridge_websocket.launch
