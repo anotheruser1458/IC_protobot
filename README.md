@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a clone of the shared project repository made by the members of the [University of Hawaii Robotic Space Exploration Team](https://manoa.hawaii.edu/uh-vip/project/robotic-space-exploration-rose-vip/). Our team's goal is to creat a six wheeled robot that can drive, operate a manipulator arm, detect life, and autonomously navigate which we will officially enter into the [University Rover Challenge](https://urc.marssociety.org/home), June 2022. This repository contains the software module prototypes which we worked diligently on in order to prove the architectural concepts laid out in our Critical Design Review(link).
+This is a clone of the shared project repository made by the members of the [University of Hawaii Robotic Space Exploration Team](https://manoa.hawaii.edu/uh-vip/project/robotic-space-exploration-rose-vip/). Our team's goal is to creat a six wheeled robot that can drive, operate a manipulator arm, detect life, and autonomously navigate which we will officially enter into the [University Rover Challenge](https://urc.marssociety.org/home), June 2022. This repository contains the software module prototypes which we worked diligently on in order to prove the architectural concepts laid out in our [Critical Design Review](https://drive.google.com/file/d/1HtWLiNnQ40CGxhcs-scGmpD602fTRI0W/view?usp=sharing).
 
 Contributors: Maxwell Pauly, Bret Witt, Ashten Akemoto, Jacob Sequeira, Jeraldine Milla, Stephanie Alemore, and Zolbo Tomita.
 
@@ -25,7 +25,7 @@ https://user-images.githubusercontent.com/74911365/154920396-d8579ff4-1784-4360-
 ## Web App Graphical User Interface (GUI)
 <br>
 A GUI is needed to contorl the robot and subsequently compete in the URC competition. The stack begins with a simple web app which interfaces with the ROS network via a web socket. Commands are transferred wirelessly (with generous bandwidth limitations) using 802.11 WiFi and the http protocol. The web server was made using Node.js and Express. The data is displayed to the operator using html/css/javascript. The video below shows a demo of the latest prototype where a video feed and three topics are displayed on the homepage. 
-
+<br>
 The latest GUI prototype can display video output, and topic data. The up and down arrows are pressed on the keyboard and which sends velocity commands to ROS, which can be seen at the bottom of the display.
 <br>
 
