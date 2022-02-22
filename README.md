@@ -13,7 +13,7 @@ Picture of the robot currently used for prototyping:
 
 ## Robot Operating System (ROS)
 
-ROS is an open source robotics middleware suite and is the premier framework for robotic rapid prototyping. The ROS wiki(link) is an outstanding resource to learn more so I won't go into detail here. The project uses ROS for the majority of the robot's communication between components and functionality. Each software developer on the project completed the ROS Tutorials(link) and below is a demonstration of ROS nodes talking to one another and executing commands.
+ROS is an open source robotics middleware suite and is the premier framework for robotic rapid prototyping. The [ROS wiki](https://www.ros.org/) is an outstanding resource to learn more so I won't go into detail here. The project uses ROS for the majority of the robot's communication between components and functionality. Each software developer on the project completed the ROS Tutorials(link) and below is a demonstration of ROS nodes talking to one another and executing commands.
 
 
 https://user-images.githubusercontent.com/74911365/154920396-d8579ff4-1784-4360-8b3e-b7f285558c4d.mp4
