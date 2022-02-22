@@ -52,8 +52,6 @@ A 'roboclaw' object was created using C++ which acts as the bridge between the l
 
 (video of ros sending and recieving data and turning the wheels)
 
-## Arm Simulation
-
 ## Installation
 
 ### Dependencies
