@@ -21,6 +21,11 @@ https://user-images.githubusercontent.com/74911365/154920396-d8579ff4-1784-4360-
 
 
 ## Gazebo Simulation
+Gazebo is a suite of simulation software that communicates quite nicely with ROS. The team religiously uses gazebo to simulate all prototyped software and hardware dimensions before any fabrication takes place.
+
+![gazeboBasics](https://user-images.githubusercontent.com/74911365/155137434-49c81e47-bed8-485f-a7df-9dd46aa74114.png)
+
+
 
 ## Web App Graphical User Interface (GUI)
 <br>
