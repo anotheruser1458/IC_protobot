@@ -29,7 +29,7 @@ Gazebo is a suite of simulation software that communicates quite nicely with ROS
 
 ## Web App Graphical User Interface (GUI)
 <br>
-A GUI is needed to contorl the robot and subsequently compete in the URC competition. The stack begins with a simple web app which interfaces with the ROS network via a web socket. Commands are transferred wirelessly (with generous bandwidth limitations) using 802.11 WiFi and the HTTP protocol. The web server was made using Node.js and Express([source](https://github.com/anotheruser1458/IC_protobot/blob/main/web_app/server.js)). The data is displayed to the operator using html/css/javascript([source](https://github.com/anotheruser1458/IC_protobot/tree/main/web_app/public/js)). The video below shows a demo of the latest prototype where a video feed and three topics are displayed on the homepage. 
+A GUI is needed to contorl the robot and subsequently compete in the URC competition. The stack begins with a simple web app which interfaces with the ROS network via a web socket. Commands are transferred wirelessly (with generous bandwidth limitations) using 802.11 WiFi and the HTTP protocol. The web server was made using Node.js and Express ([source](https://github.com/anotheruser1458/IC_protobot/blob/main/web_app/server.js)). The data is displayed to the operator using html/css/javascript ([source](https://github.com/anotheruser1458/IC_protobot/tree/main/web_app/public/js)). The video below shows a demo of the latest prototype where a video feed and three topics are displayed on the homepage. 
 <br>
 The latest GUI prototype can display video output, and topic data. The up and down arrows are pressed on the keyboard and which sends velocity commands to ROS, which can be seen at the bottom of the display.
 <br>
@@ -49,7 +49,7 @@ https://user-images.githubusercontent.com/74911365/140019513-80895195-2fa0-49e1-
 The robot uses ten motors: six for forward and backward acceleration and four for steering the wheels left and right. We are using [Roboclaw](https://www.pololu.com/product/3284) motor encoders which communicate over serial ports. 
 
 
-A 'roboclaw' object was created using C++ which acts as the bridge between the linux serial ports and the actual encoders ([source](https://github.com/anotheruser1458/IC_protobot/blob/main/catkin_ws/src/protobot/src/protobot_control/src/roboclaw.cpp). This object is used by the ROS node ([source](https://github.com/anotheruser1458/IC_protobot/blob/main/catkin_ws/src/protobot/src/protobot_control/src/protobot.cpp)) to properly send and recieve data and control when the wheels spin.
+A 'roboclaw' object was created using C++ which acts as the bridge between the linux serial ports and the actual encoders ([source](https://github.com/anotheruser1458/IC_protobot/blob/main/catkin_ws/src/protobot/src/protobot_control/src/roboclaw.cpp)). This object is used by the ROS node ([source](https://github.com/anotheruser1458/IC_protobot/blob/main/catkin_ws/src/protobot/src/protobot_control/src/protobot.cpp)) to properly send and recieve data and control when the wheels spin.
 
 (video of ros sending and recieving data and turning the wheels)
 
