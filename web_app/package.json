@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.8.1",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.4.4",
     "express": "^4.17.1",
     "gamepad.js": "^1.0.4",
     "react": "^17.0.2",
