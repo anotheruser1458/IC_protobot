@@ -1,0 +1,4 @@
+<launch>
+    <node name="web_video_server" pkg="web_video_server" type="web_video_server"/>
+    <node name="video_stream" pkg="video_stream_opencv" type="video_stream"/>
+</launch>
