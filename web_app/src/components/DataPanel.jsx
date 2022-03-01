@@ -4,6 +4,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Vector3 from "./messages/geometry_msgs/Vector3"
+import RosConnect from "roslib-reactjs"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -38,7 +40,7 @@ function a11yProps(index) {
   };
 }
 
-export default function DataPanel() {
+export default function DataPanel(props) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -49,20 +51,28 @@ export default function DataPanel() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange}>
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Cmd_Vel" {...a11yProps(0)} />
+          <Tab label="Topic 2" {...a11yProps(1)} />
+          <Tab label="Topic 3" {...a11yProps(2)} />
         </Tabs>
       </Box>
-      <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
+      
+      {/* CMD_VEL */}
+      <RosConnect url="ws://0.0.0.0:9090" autoconnect timeout={1000}>
+      </RosConnect>
+
+        <TabPanel value={value} index={0}>
+
+          <Vector3 title="Linear" />
+          <Vector3 title="Angular" />
+        </TabPanel>
+
+        <TabPanel value={value} index={1}>
+          Item Two
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          Item Three
+        </TabPanel>
     </Box>
   );
 }

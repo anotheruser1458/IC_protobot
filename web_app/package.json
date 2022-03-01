@@ -18,7 +18,9 @@
     "gamepad.js": "^1.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "roslib": "^1.2.0"
+    "react-ros": "^0.10.0",
+    "roslib": "^1.2.0",
+    "roslib-reactjs": "^1.1.9"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",

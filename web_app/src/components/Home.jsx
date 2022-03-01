@@ -10,9 +10,7 @@ const videoBoxStyle = {
     justifyContent: "space-evenly",
 
 }
-const dataBoxStyle = {
 
-}
 const Home = () => {
     return (
         <>
