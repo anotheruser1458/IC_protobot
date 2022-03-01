@@ -1,7 +1,12 @@
 import React from 'react'
 
-export default function VideoFeed() {
+const imageStyle = {
+    margin: 10,
+    width: "40%",
+}
+
+export default function VideoFeed(props) {
   return (
-    <div>VideoFeed</div>
+    <img style={imageStyle} src={props.url} alt={props.alt}/>
   )
 }
