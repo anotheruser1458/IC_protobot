@@ -65,8 +65,8 @@ export default function DataPanel(props) {
 
         <TabPanel value={value} index={0}>
 
-          <Vector3 ros={ros} title="linear" />
-          <Vector3 ros={ros} title="angular" />
+          <Vector3 ros={ros} title="linear"  topicName="/cmd_vel"/>
+          <Vector3 ros={ros} title="angular" topicName="/cmd_vel" />
         </TabPanel>
 
         <TabPanel value={value} index={1}>
