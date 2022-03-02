@@ -2,6 +2,7 @@
 //http://docs.ros.org/en/noetic/api/geometry_msgs/html/msg/Vector3.html
 
 import React, {useState} from 'react'
+import { roundWithPrecision } from '../../util/roundData'
 
 // props.title can only be 'angular' or 'linear' or it will break
 export default function Vector3(props) {
@@ -19,15 +20,10 @@ export default function Vector3(props) {
     // @todo rounding errors of small decimal increments cause
     // infinite state reset, need to do some type of rounding then compare
     var data = m[props.title]
-    var roundedData = { 
-        x: parseInt(((data.x * 100) % 100)),
-        y: parseInt(((data.y * 100) % 100)),
-        z: parseInt(((data.z * 100) % 100))
-    }
 
-    document.getElementById(nameX).innerHTML = roundedData.x
-    document.getElementById(nameY).innerHTML = roundedData.y
-    document.getElementById(nameZ).innerHTML = roundedData.z    
+    document.getElementById(nameX).innerHTML = roundWithPrecision(data.x, 3)
+    document.getElementById(nameY).innerHTML = roundWithPrecision(data.y, 3)
+    document.getElementById(nameZ).innerHTML = roundWithPrecision(data.z, 3)
   })
 
 
