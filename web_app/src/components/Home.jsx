@@ -8,7 +8,6 @@ const videoBoxStyle = {
     display: "flex",
     alignContent: "center",
     justifyContent: "space-evenly",
-
 }
 
 const Home = () => {

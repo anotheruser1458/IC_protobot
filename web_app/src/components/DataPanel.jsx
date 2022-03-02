@@ -5,7 +5,7 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Vector3 from "./messages/geometry_msgs/Vector3"
-import RosConnect from "roslib-reactjs"
+
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -47,6 +47,10 @@ export default function DataPanel(props) {
     setValue(newValue);
   };
 
+  var ros = new ROSLIB.Ros({
+    url: "ws://0.0.0.0:9090"
+  })
+
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -58,13 +62,11 @@ export default function DataPanel(props) {
       </Box>
       
       {/* CMD_VEL */}
-      <RosConnect url="ws://0.0.0.0:9090" autoconnect timeout={1000}>
-      </RosConnect>
 
         <TabPanel value={value} index={0}>
 
-          <Vector3 title="Linear" />
-          <Vector3 title="Angular" />
+          <Vector3 ros={ros} title="linear" />
+          <Vector3 ros={ros} title="angular" />
         </TabPanel>
 
         <TabPanel value={value} index={1}>
