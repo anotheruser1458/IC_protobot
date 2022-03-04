@@ -4,8 +4,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Vector3 from "./messages/geometry_msgs/Vector3"
-
+import CmdVel from './topics/CmdVel';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -64,9 +63,7 @@ export default function DataPanel(props) {
       {/* CMD_VEL */}
 
         <TabPanel value={value} index={0}>
-
-          <Vector3 ros={ros} title="linear"  topicName="/cmd_vel"/>
-          <Vector3 ros={ros} title="angular" topicName="/cmd_vel" />
+          <CmdVel ros={ros} />
         </TabPanel>
 
         <TabPanel value={value} index={1}>
