@@ -1,5 +1,5 @@
 import React from 'react'
-import Vector3CmdVel from '../messages/geometry_msgs/Vector3'
+import Vector3CmdVel from '../messages/geometry_msgs/Vector3CmdVel'
 
 export default function CmdVel(props) {
   return (
