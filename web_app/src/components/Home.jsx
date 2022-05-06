@@ -14,8 +14,8 @@ const Home = () => {
     return (
         <>
         <Box style={videoBoxStyle} sx={{border: 3, borderRadius: 3, borderColor: "divider"}}> 
-            <VideoFeed url="http://localhost:8080/stream?topic=/image_raw" alt="webcam1"/>
-            <VideoFeed url="http://localhost:8080/stream?topic=/image_raw" alt="webcam1"/>
+            {/* <VideoFeed url="http://localhost:8080/stream?topic=/image_raw" alt="webcam1"/>
+            <VideoFeed url="http://localhost:8080/stream?topic=/image_raw" alt="webcam1"/> */}
         </Box >
         <DataPanel />
         </>

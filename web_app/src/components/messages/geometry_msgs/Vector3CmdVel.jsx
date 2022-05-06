@@ -9,7 +9,7 @@ export default function Vector3CmdVel(props) {
 
   var topic = new ROSLIB.Topic({
     ros: props.ros,
-    name: "/cmd_vel"
+    name: props.name
   })
   
   const nameX = props.title + "X"

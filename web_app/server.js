@@ -11,7 +11,7 @@ app.use(express.static("public"))
 
 // roslib
 var ros = new ROSLIB.Ros({
-    url: 'ws://0.0.0.0:9090'
+    url: 'ws://168.105.224.55:9090'
 })
 
 ros.on('connection', () => {

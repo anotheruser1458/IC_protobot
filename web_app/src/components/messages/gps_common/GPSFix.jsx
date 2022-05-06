@@ -3,12 +3,13 @@
 
 import React from "react"
 
-const gpsStyle = {
-    background: "green"
-}
-
 const GPSFix = (props) => {
-    return <h1 style={gpsStyle}>"GPS FIX TEST"</h1>
+    var data = props.data
+    console.log(data)
+    return <>
+        <h1>GPSFix Test</h1>
+    
+    </>
 }
 
 export default GPSFix

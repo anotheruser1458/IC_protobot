@@ -5,6 +5,8 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import CmdVel from './topics/CmdVel';
+import Imu from "./messages/Imu"
+import GPSFix from './messages/gps_common/GPSFix';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -47,7 +49,7 @@ export default function DataPanel(props) {
   };
 
   var ros = new ROSLIB.Ros({
-    url: "ws://0.0.0.0:9090"
+    url: "ws://168.105.224.55:9090"
   })
 
   return (
@@ -63,7 +65,19 @@ export default function DataPanel(props) {
       {/* CMD_VEL */}
 
         <TabPanel value={value} index={0}>
-          <CmdVel ros={ros} />
+          <h2>/protobot_velocity_controller/cmd_vel</h2>
+            <CmdVel ros={ros} name={"/protobot_velocity_controller/cmd_vel"}/>
+          <br></br>
+
+          <h2>/track_cam/imu</h2>
+          <Imu ros={ros} title={"trackCam"} name={"/track_cam/imu"}/>
+          <br></br>
+
+          <h2>/depth_cam/imu</h2>
+          <Imu ros={ros} title={"depthCam"} name={"/depth_cam/imu"}/>
+          <br></br>
+
+          {/* <GPSFix ros={ros} /> */}
         </TabPanel>
 
         <TabPanel value={value} index={1}>

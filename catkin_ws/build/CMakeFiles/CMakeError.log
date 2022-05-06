@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_18288/fast && /usr/bin/make -f CMakeFiles/cmTC_18288.dir/build.make CMakeFiles/cmTC_18288.dir/build
+Run Build Command(s):/usr/bin/make cmTC_b4ee9/fast && /usr/bin/make -f CMakeFiles/cmTC_b4ee9.dir/build.make CMakeFiles/cmTC_b4ee9.dir/build
 make[1]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_18288.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_18288.dir/src.c.o   -c /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_18288
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18288.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_18288.dir/src.c.o  -o cmTC_18288 
-/usr/bin/ld: CMakeFiles/cmTC_18288.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_b4ee9.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b4ee9.dir/src.c.o   -c /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b4ee9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4ee9.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_b4ee9.dir/src.c.o  -o cmTC_b4ee9 
+/usr/bin/ld: CMakeFiles/cmTC_b4ee9.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_18288.dir/build.make:87: cmTC_18288] Error 1
+make[1]: *** [CMakeFiles/cmTC_b4ee9.dir/build.make:87: cmTC_b4ee9] Error 1
 make[1]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_18288/fast] Error 2
+make: *** [Makefile:121: cmTC_b4ee9/fast] Error 2
 
 
 Source file was:
@@ -41,37 +41,35 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_50406/fast && /usr/bin/make -f CMakeFiles/cmTC_50406.dir/build.make CMakeFiles/cmTC_50406.dir/build
+Run Build Command(s):/usr/bin/make cmTC_afcdd/fast && /usr/bin/make -f CMakeFiles/cmTC_afcdd.dir/build.make CMakeFiles/cmTC_afcdd.dir/build
 make[1]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_50406.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_50406.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_50406
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50406.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_50406.dir/CheckFunctionExists.c.o  -o cmTC_50406  -lpthreads 
+Building C object CMakeFiles/cmTC_afcdd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_afcdd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_afcdd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afcdd.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_afcdd.dir/CheckFunctionExists.c.o  -o cmTC_afcdd  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_50406.dir/build.make:87: cmTC_50406] Error 1
+make[1]: *** [CMakeFiles/cmTC_afcdd.dir/build.make:87: cmTC_afcdd] Error 1
 make[1]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_50406/fast] Error 2
+make: *** [Makefile:121: cmTC_afcdd/fast] Error 2
 
 
 
 Determining if the include file pgm.h exists failed with the following output:
 Change Dir: /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_a1223/fast && make[1]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
-/usr/bin/make -f CMakeFiles/cmTC_a1223.dir/build.make CMakeFiles/cmTC_a1223.dir/build
-make[2]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a1223.dir/CheckIncludeFile.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_a1223.dir/CheckIncludeFile.cxx.o -c /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Run Build Command(s):/usr/bin/make cmTC_6e99b/fast && /usr/bin/make -f CMakeFiles/cmTC_6e99b.dir/build.make CMakeFiles/cmTC_6e99b.dir/build
+make[1]: Entering directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6e99b.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_6e99b.dir/CheckIncludeFile.cxx.o -c /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
 /home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: pgm.h: No such file or directory
     1 | #include <pgm.h>
       |          ^~~~~~~
 compilation terminated.
-make[2]: *** [CMakeFiles/cmTC_a1223.dir/build.make:66: CMakeFiles/cmTC_a1223.dir/CheckIncludeFile.cxx.o] Error 1
-make[2]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
-make[1]: *** [Makefile:121: cmTC_a1223/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_6e99b.dir/build.make:66: CMakeFiles/cmTC_6e99b.dir/CheckIncludeFile.cxx.o] Error 1
 make[1]: Leaving directory '/home/maxwell/Desktop/IC_protobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6e99b/fast] Error 2
 
 
 

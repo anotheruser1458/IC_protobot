@@ -12,10 +12,7 @@ export default function Odometry(props) {
     })
 
     topic.subscribe((m) => {
-      var
     })
-    
-    
 
     return (
       <h3>{props.title} Odometry</h3>

@@ -1,0 +1,8 @@
+prefix=/home/maxwell/Desktop/IC_protobot/catkin_ws/devel
+
+Name: gui
+Description: Description of gui
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
