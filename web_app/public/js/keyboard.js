@@ -1,18 +1,22 @@
-var keyboardTopic = new ROSLIB.Topic({
-    ros:ros,
-    name: "/cmd_vel"
+const ros = new ROSLIB.Ros({
+    url:'ws://localhost:9090'
 })
 
-keyboardTopic.subscribe((m) => {
-    x = String(m.linear.x.toFixed(2))
-    lx= String(m.angular.x.toFixed(2))
-    document.getElementById("linearX").innerHTML = "LinearX: " + x
-    document.getElementById("linearY").innerHTML = "LinearY: " + m.linear.y
-    document.getElementById("linearZ").innerHTML = "LinearZ: " + m.linear.z
-    document.getElementById("angularX").innerHTML = "AngularX: " + lx
-    document.getElementById("angularY").innerHTML = "AngularY: " + m.linear.y
-    document.getElementById("angularZ").innerHTML = "AngularZ: " + m.linear.z
+var keyboardTopic = new ROSLIB.Topic({
+    ros:ros,
+    name: "/protobot_velocity_controller/cmd_vel"
 })
+
+// keyboardTopic.subscribe((m) => {
+//     x = String(m.linear.x.toFixed(2))
+//     lx= String(m.angular.x.toFixed(2))
+//     document.getElementById("linearX").innerHTML = "LinearX: " + x
+//     document.getElementById("linearY").innerHTML = "LinearY: " + m.linear.y
+//     document.getElementById("linearZ").innerHTML = "LinearZ: " + m.linear.z
+//     document.getElementById("angularX").innerHTML = "AngularX: " + lx
+//     document.getElementById("angularY").innerHTML = "AngularY: " + m.linear.y
+//     document.getElementById("angularZ").innerHTML = "AngularZ: " + m.linear.z
+// })
 
 var message;
 var linear = {x:0, y:0, z:0};

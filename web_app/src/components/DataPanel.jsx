@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import CmdVel from './topics/CmdVel';
 import Imu from "./messages/Imu"
 import GPSFix from './messages/gps_common/GPSFix';
+import ToggleLED from "./ToggleLED"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -56,35 +57,34 @@ export default function DataPanel(props) {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange}>
-          <Tab label="Cmd_Vel" {...a11yProps(0)} />
-          <Tab label="Topic 2" {...a11yProps(1)} />
-          <Tab label="Topic 3" {...a11yProps(2)} />
+          <Tab label="/protobot_velocity_controller/cmd_vel" {...a11yProps(0)} />
+          <Tab label="/track_cam/imu" {...a11yProps(1)} />
+          <Tab label="/depth_cam/imu" {...a11yProps(2)} />
         </Tabs>
       </Box>
       
-      {/* CMD_VEL */}
 
         <TabPanel value={value} index={0}>
           <h2>/protobot_velocity_controller/cmd_vel</h2>
             <CmdVel ros={ros} name={"/protobot_velocity_controller/cmd_vel"}/>
           <br></br>
 
-          <h2>/track_cam/imu</h2>
-          <Imu ros={ros} title={"trackCam"} name={"/track_cam/imu"}/>
-          <br></br>
 
-          <h2>/depth_cam/imu</h2>
-          <Imu ros={ros} title={"depthCam"} name={"/depth_cam/imu"}/>
-          <br></br>
 
-          {/* <GPSFix ros={ros} /> */}
+          <ToggleLED ros={ros} />
+
+
         </TabPanel>
 
         <TabPanel value={value} index={1}>
-          Item Two
+        <h2>/track_cam/imu</h2>
+          <Imu ros={ros} title={"trackCam"} name={"/track_cam/imu"}/>
+          <br></br>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+        <h2>/depth_cam/imu</h2>
+          <Imu ros={ros} title={"depthCam"} name={"/depth_cam/imu"}/>
+          <br></br>
         </TabPanel>
     </Box>
   );

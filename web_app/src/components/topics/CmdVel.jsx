@@ -5,9 +5,9 @@ export default function CmdVel(props) {
   return (
       <>
     <h2>Linear:</h2>
-    <Vector3CmdVel ros={props.ros} title="linear"/>
+    <Vector3CmdVel ros={props.ros} name={props.name} title="linear"/>
     <h2>Angular:</h2>
-    <Vector3CmdVel ros={props.ros} title="angular" />
+    <Vector3CmdVel ros={props.ros} name={props.name} title="angular" />
     </>
     )
 }

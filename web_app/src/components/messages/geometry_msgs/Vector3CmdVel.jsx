@@ -7,6 +7,7 @@ import { roundWithPrecision } from '../../util/roundData'
 // props.title can only be 'angular' or 'linear'
 export default function Vector3CmdVel(props) {
 
+
   var topic = new ROSLIB.Topic({
     ros: props.ros,
     name: props.name
